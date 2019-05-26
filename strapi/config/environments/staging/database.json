@@ -2,20 +2,20 @@
   "defaultConnection": "default",
   "connections": {
     "default": {
-      "connector": "strapi-hook-mongoose",
       "settings": {
         "client": "mongo",
-        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
-        "srv": "${process.env.DATABASE_SRV || false}",
-        "port": "${process.env.DATABASE_PORT || 27017}",
-        "database": "${process.env.DATABASE_NAME || 'strapi'}",
-        "username": "${process.env.DATABASE_USERNAME || ''}",
-        "password": "${process.env.DATABASE_PASSWORD || ''}"
+        "host": "ds261116.mlab.com",
+        "srv": false,
+        "port": "61116",
+        "database": "strapi-heroku",
+        "username": "heroku",
+        "password": "heroku1"
       },
       "options": {
-        "authenticationDatabase": "${process.env.DATABASE_AUTHENTICATION_DATABASE || ''}",
-        "ssl": "${process.env.DATABASE_SSL || false}"
-      }
+        "authenticationDatabase": "strapi-heroku",
+        "ssl": false
+      },
+      "connector": "strapi-hook-mongoose"
     }
   }
 }
